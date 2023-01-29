@@ -7,5 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Paribesh Neupane",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.2.6",
+    "bootstrap": "^5.2.3",
+    "react-bootstrap": "^2.7.0",
+    "react-router-dom": "^6.8.0",
+    "redux": "^4.2.1"
+  }
 }
