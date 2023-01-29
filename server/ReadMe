@@ -1,0 +1,18 @@
+TODOS:
+
+This express server is going to serve a client with multiple user varification required to authorize staff, patience and hospital to provide a efficient management of vaccination program to track patient with thier doses of vaccination provided.
+The project will have following requirements that has to be fullfilled:
+
+We will be using MERNStack architecutre to create the application. Data are saved in MongoDb database. Server is handled by express. React should handle the front-end and we will be using Nodejs as file-server and package manager.
+
+The approach will be to create all the models required; what ever the archtecture of the application will be, so that we could get a head start to solve our problem:
+Components that are required: 1. Must have a component that will allow any user to register as a STAFF, ADMIN, or USER; 2. Admin will have a previlage to create locations. STAFF will have a location assigned by the ADMIN. USER can browse through the location and ask for a vaccination appointment. A staff from the particular hospital will reveive a notificaiton about the order and they will be able to confirm with the requierd dose.
+
+//TODO: All models must have a ROlE field so that they could be authorized role based on their own privilages.
+
+//TODO: 0. Must have a Admin model that will have List of all the locations
+//TODO: 1. Must have a Patient model that can schedule a date for vaccination and track thier location and availbility.
+//TODO: 2. Must have a Staff model that can track differenct vaccination scheduled within thier location
+//TODO: 3. Must have a Patient model that can be saved in the database.
+
+Working on: //Creating a Register Model For anybody to be registered with the application.
