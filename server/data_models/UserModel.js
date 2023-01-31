@@ -9,7 +9,7 @@ let userSchema = new SchemaObj(
     password: { type: String, required: true },
     email: { type: String, required: true },
     phone: { type: Number },
-    roles: { type: String },
+    role: { type: String, required: true },
   },
   {
     versionKey: false,

@@ -1,22 +1,30 @@
 const userModel = require("../data_models/UserModel");
 
-const saveUser = (req, res) => {
-  let user = req.body;
+exports.saveUser = (req, res) => {
+  console.log("User to save", req.body);
+  let user = req.body.user;
+  let userObj = new userModel(user);
+  userObj.save((err, data) => {
+    if (err) {
+      console.log("Error while adding user to database", err);
+    } else {
+      console.log("User created successfully");
+      res.send(data);
+    }
+  });
 };
 
-const getUser = (req, res) => {
+exports.getUser = (req, res) => {
   let id = req.params.id;
   res.send(id);
 };
 
-const updateUser = (req, res) => {
+exports.updateUser = (req, res) => {
   let id = req.params.id;
   res.send(id);
 };
 
-const deleteUser = (req, res) => {
+exports.deleteUser = (req, res) => {
   let id = req.params.id;
   res.send(id);
 };
-
-module.exports = { saveUser, getUser, updateUser, deleteUser };
